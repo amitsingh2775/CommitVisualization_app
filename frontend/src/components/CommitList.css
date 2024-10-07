@@ -1,0 +1,92 @@
+/* Styling for the commit page */
+
+.commit-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f7fa; /* Light background */
+    color: #333;
+  }
+  
+  .commit-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 0.5rem;
+    color: #24292f; /* Darker title color */
+  }
+  
+  .commit-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .commit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e1e4e8;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .commit-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .commit-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .commit-message {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  .commit-message:hover {
+    text-decoration: underline;
+  }
+  
+  .commit-author {
+    font-size: 0.9rem;
+    color: #586069;
+  }
+  
+  .commit-sha {
+    font-size: 0.9rem;
+    background-color: #f1f8ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .commit-sha a {
+    text-decoration: none;
+    color: #0366d6;
+  }
+  
+  .commit-sha a:hover {
+    text-decoration: underline;
+  }
+  /* CommitList.css */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out;
+  }
+  
